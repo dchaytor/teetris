@@ -3,3 +3,12 @@
  * (including custom user-defined blocks) */
 
 
+
+
+
+
+typedef struct block	{
+
+
+
+}
