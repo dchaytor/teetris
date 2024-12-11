@@ -1,0 +1,32 @@
+........................................
+......     teetris/teetris.c     .......
+........................................
+
+terminal-based block game (which i invented btw), where falling patterns of
+blocks are able to be moved and/or rotated by the player until hitting the 
+floor or another block, where they are stopped in place (and a new block starts 
+falling). if a full horizontal line is completed, points are awarded to the 
+player and the line is wiped, with all blocks above the line falling to their 
+next stopping point. at certain point thresholds, the game speed is increased.
+
+the game ends when any block reaches the ceiling of the screen, at which point
+the player is prompted to enter their initials, which are then logged along
+with their score into the highscore file.
+
+the game launches to a menu program (also returns here when game is lost or
+quit out of), from which the game can be launched, game settings can be changed 
+(writes to conf.h), the system highscores can be viewed, or new blocks can be
+defined or enabled/disabled (blocks are saved to blocks.h to be used in game)
+
+takes no input parameters.
+
+usage:
+  ./teetris
+
+	launches the application in a new terminal
+
+default controls:
+  h / left arrow 	-	move block left
+  l / right arrow	- 	move block right	
+  k / up arrow		- 	rotate block pi/2 rad ccw
+  j / down arrow	-	send block down to bottom
