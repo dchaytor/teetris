@@ -1,6 +1,9 @@
 /* <upscrn.h>
  * code with helper functions to handle screen update + printing */
 
+/* NOTE: upscrn also needs to handle deleting row when all 1
+ * (check during update of screen array)	*/
+
 #include <stdio.h>
 #define OUTFILE stdout
 #define MASK 0b10000000	// & this with element to decide if printing
